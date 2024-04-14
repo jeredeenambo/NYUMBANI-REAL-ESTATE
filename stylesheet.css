@@ -1,0 +1,262 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap')</style>
+
+{
+	font-family: 'Montserrat',sans-serif;
+	margin: 0;
+	padding: ;
+	box-sizing: border-box;
+}
+.navbar a{
+	font-size: 14px;
+	font-weight: 500;
+
+}
+.navbar-toggleer{
+	padding: 1px 5px;
+	font-size: 18px;
+	line-height: 0.3;
+	background-color: green;
+}
+.w-100-height{
+	height: 90vh;
+	width: 100vh;
+}
+.card-bottom{
+	right: 0;
+	margin-top: -17;
+	border-radius: 0;
+
+}
+.card-text{
+	color: white;
+
+}
+.card-color{
+	background: grey;
+	border-radius: 0;
+
+}
+/*property section*/
+ .image-container {
+    position: relative;
+    overflow: hidden;
+  }
+  .image-container img {
+    transition: transform 0.3s ease;
+  }
+  .image-container:hover img {
+    transform: scale(1.1);
+  }
+  .card-body p {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: wave-animation 1s infinite linear;
+  }
+  @keyframes wave-animation {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+  }
+   /* Styles for the fieldset */
+  #welcome-fieldset {
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    transition: background-color 2s ease;
+  }
+  /* Styles for the popup form */
+  .popup-form {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+  }
+
+  /* Styles for the overlay */
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9998;
+  }
+
+  /* Styles for the form fields */
+  .popup-form input {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+
+  .popup-form button {
+    padding: 8px 20px;
+    background-color: skyblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+ .exit-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+/* Define a CSS animation for blinking */
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Apply the blink animation to the book-now class */
+.book-now {
+  animation: blink 1.5s infinite;
+}
+  /* Hover effects for image  body section read */
+  .img-overlay {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .img-overlay img {
+    transition: transform 0.3s ease;
+  }
+
+  .img-overlay:hover img {
+    transform: scale(1.1);
+  }
+
+  .img-overlay .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .img-overlay:hover .overlay {
+    opacity: 1;
+  }
+
+  /* Rounded list */
+  .rounded-list {
+    border-radius: 15px;
+    background-color: lavender;
+    padding: 20px;
+    display: none; /* Initially hide the rounded list */
+  }
+   /* Blinking animation banner section on properties*/
+  @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  /* Circle styling */
+  .circle {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 85px;
+    height: 85px;
+    color: white;
+    text-align: center;
+    line-height: 90px;
+    background-color: red;
+    border-radius: 50%;
+    z-index: 999;
+    animation: blink 2s infinite;
+  }
+
+  /* Adjust card positioning */
+  .card {
+    position: relative;
+    z-index: 1; /* Ensure cards are on top of the banner */
+  }
+  /*footer*/
+  .bg-footer{
+  	background-color: black;
+  	padding: 50px 0 30px;
+  }
+  .bg-footer a{
+  	text-decoration: none;
+  	color: #aeaeae;
+  }
+  /*map section*/
+  .image-container {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .image-container img {
+      transition: transform 0.3s ease;
+      border-right: 10px solid green;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      border-left: 10px solid green;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+    }
+
+    .image-container .overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      animation: wave 1.5s infinite;
+    }
+
+    @keyframes wave {
+      0% { transform: translate(-50%, -50%) rotate(0deg); }
+      50% { transform: translate(-50%, -50%) rotate(20deg); }
+      100% { transform: translate(-50%, -50%) rotate(0deg); }
+    }
+
+     /* Define the pulse animation */
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  /* Apply the pulse animation to images */
+  .pulse-image {
+    transition: transform 0.3s;
+  }
+
+  /* Apply the pulse animation on hover */
+  .pulse-image:hover {
+    animation: pulse 1.5s infinite;
+  }
